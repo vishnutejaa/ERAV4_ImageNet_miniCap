@@ -1,0 +1,12 @@
+torch
+torchvision
+tqdm
+numpy
+matplotlib
+timm
+torchmetrics
+albumentations
+huggingface_hub
+torch-lr-finder
+tensorboard
+tensorboardX
