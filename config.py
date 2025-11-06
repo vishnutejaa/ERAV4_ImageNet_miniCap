@@ -45,6 +45,12 @@ class TrainingConfig:
     train_dir: str = "data/train"
     val_dir: str = "data/val"
 
+    # Parquet dataset support
+    use_parquet: bool = False  # Set to True to use Hugging Face parquet datasets
+    parquet_data_dir: str = None  # Directory containing parquet files (e.g., "/data/imagenet-1k/data")
+    parquet_train_pattern: str = "train-*.parquet"  # Pattern for train parquet files
+    parquet_val_pattern: str = "validation-*.parquet"  # Pattern for validation parquet files
+
     # DataLoader
     pin_memory: bool = True
     persistent_workers: bool = True
